@@ -3,11 +3,11 @@ butt.onclick = function() {
     let n = document.getElementById('inputN').value;
     let m = document.getElementById('inputM').value;
 
-    while (!Number.isInteger(n) || n == '') {
+    while (!Number.isInteger(Number(n)) || Number(n) == '') {
         n = alert(`N не є числом або не є цілим числом.`);
         return false;
     }
-    while (!Number.isInteger(m) || m == '') {
+    while (!Number.isInteger(Number(m)) || Number(m) == '') {
         m = alert(`M не є числом або не є цілим числом.`);
         return false;
     }
