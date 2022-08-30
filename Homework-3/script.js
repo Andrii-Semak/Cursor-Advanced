@@ -1,4 +1,4 @@
-//1 function
+//First function
 
 buttone.onclick = function() {
 let maxdigit = document.getElementById('firstinput').value;
