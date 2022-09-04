@@ -74,19 +74,19 @@ const students = [{
     let course = [];
     students.map((std) => {std.name === name ? (course = std.course) : course;});
     if(course){
-      const AllInfo = {
+      const StudentInfo = {
         name,
         course,
         averageMark: getAverageMark(name),
       };
-      return AllInfo;
+      return StudentInfo;
     }
     else return document.getElementById('all3').innerHTML=`3 функція:<br>В журналі немає студента ${student3}<br>`;
     
   }
 
-  const AllInfo = JSON.stringify(getStudentInfo(student3));
-  document.getElementById('all3').innerHTML=`3 функція:<br>Вся інформація про: ${student3} - ${AllInfo}<br>`;
+  const StudentInfo = JSON.stringify(getStudentInfo(student3));
+  document.getElementById('all3').innerHTML=`3 функція:<br>Вся інформація про: ${student3} - ${StudentInfo}<br>`;
 
   //4 function
 
