@@ -22,7 +22,7 @@ function generateBlocksInterval(){
       div.classList.add("box")
       div.style = "background-color: " + '#' + (Math.random().toString(16) + '000000').substring(2,8);
       setInterval(() => {
-        div.style = ("background-color: " + '#' + (Math.random().toString(16) + '000000').substring(2,8)), 1000;
+        div.style = ("background-color: " + '#' + (Math.random().toString(16) + '000000').substring(2,8))
       }, 1000);
       parentAdvanced.appendChild(div);
      }    
