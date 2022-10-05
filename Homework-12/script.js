@@ -30,9 +30,9 @@ async function getPlanets(){
 
         let btnPrev = createButton('btnForPlanets', 'prev');
         let btnNext = createButton('btnForPlanets', 'next');
-        if(!planetsJSON.prev == 0){
+        if(!planetsJSON.previous == 0){
             btnPrev.addEventListener('click', function(){
-                planetsLink = planetsJSON.prev;                
+                planetsLink = planetsJSON.previous;                
                 getPlanets();
             });
         };
